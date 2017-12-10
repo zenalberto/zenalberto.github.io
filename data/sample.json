@@ -1,0 +1,33 @@
+{
+  "experiences": [
+    {
+      "dates": "Febbraio 2011 - Oggi",
+      "title": "Organizzatore di eventi",
+      "company": "Libero Professionista",
+      "company": "2 convention internazionali, 1 evento culturale internazionale, creatore di 1 format di evento culturale musicale, più di 6 anni di organizzazione di eventi di intrattenimento, conferenze e workshops;",
+    },
+    {
+      "dates": "null",
+      "title": "null",
+      "company": "null",
+      "company": "null"
+    }
+
+  ],
+
+  "porfolio": [
+    {
+      "projectThumb": "images/portfolio/lighthouse.jpg",
+      "projectLink": "https://www.behance.net/",
+      "projectLinkText": "Project Link",
+      "projectCategory": "Web Design",
+      "projectTitle": "Lighthouse",
+      "projectModal": {
+        "imageUrl": "images/portfolio/gallery/g-lighthouse.jpg",
+        "imageSize": "1050x700",
+        "title": "Lighthouse",
+        "caption": "Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi."
+      }
+    }
+  ]
+}
