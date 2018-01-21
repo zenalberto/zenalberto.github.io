@@ -1,4 +1,4 @@
-<section class="s-about target-section">
+<section class="s-about target-section" ng-controller="aboutController as about">
 
     <div class="row narrow section-intro has-bottom-sep">
         <div class="col-full text-center">
@@ -22,32 +22,13 @@
 
         <div class="col-six tab-full right">
             <h3>I've Got Some skills.</h3>
-
-            <ul class="skill-bars">
-                <li>
-                <div class="progress percent95"><span>95%</span></div>
-                <strong>Organizzazione Eventi</strong>
-                </li>
-                <li>
-                <div class="progress percent85"><span>85%</span></div>
-                <strong>Project Management</strong>
-                </li>
-                <li>
-                <div class="progress percent85"><span>85%</span></div>
-                <strong>Pubbliche Relazioni</strong>
-                </li>
-                <li>
-                <div class="progress percent95"><span>95%</span></div>
-                <strong>Networking</strong>
-                </li>
-                <li>
-                <div class="progress percent75"><span>75%</span></div>
-                <strong>Team</strong>
-                </li>
-                <li>
-                <div class="progress percent90"><span>90%</span></div>
-                <strong>Lavoro sotto stress</strong>
-                </li>
+            <ul class="skill-bars" ng-repeat="skill in about.skills">
+              <li>
+                <div ng-class="about.progressBarClass(skill.percent)">
+                  <span>{{skill.percent}}</span>
+                </div>
+                <strong>{{skill.name}}</strong>
+              </li>
             </ul>
         </div>
 
@@ -132,4 +113,4 @@
 
     </div> <!-- end about-content timeline -->
 
-</section>section-about.html
+</section>
